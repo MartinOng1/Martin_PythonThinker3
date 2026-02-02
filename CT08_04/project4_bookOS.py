@@ -28,6 +28,7 @@ while True:
                         if order not in customer_order:
                             customer_order[order] = {"quantity" : round(int(quantityorder)), "cost" : menu[order]}
                         else:
+                            # suggestions: you could also use customer_order[order]["quantity"] += round(int(quantityorder))
                             customer_order[order] = {"quantity" : customer_order[order]["quantity"]+round(int(quantityorder)), "cost" : menu[order]}
                         print("The item successfully added to your order.")
                         break
@@ -44,6 +45,9 @@ while True:
         cost = 0
         for item in customer_order:
             cost += customer_order[item]["quantity"]*customer_order[item]["cost"]
+            # take note of the quotes you used in the dictionary, you cannot have a "" inside a ""
+            # adding zero is ok for this case but a safer waywould to be using :.2f
+            # suggestion: print(f"{customer_order[item]['quantity']} x {item}: ${customer_order[item]['cost'] * customer_order[item]['quantity']:.2f}")
             print(f"{customer_order[item]["quantity"]}x {item}: ${customer_order[item]["cost"]*customer_order[item]["quantity"]}0")
         if cost >= 20:
             cost *= 0.9
