@@ -51,7 +51,7 @@ while True:
             print(f"{customer_order[item]["quantity"]}x {item}: ${customer_order[item]["cost"]*customer_order[item]["quantity"]}0")
         if cost >= 20:
             cost *= 0.9
-            print("Since you exceeded a cost of $20, you availed of a 10% discount on your entire purchase!")
+            print("Since you exceeded a cost of $20, you availed of a 10 percent discount on your entire purchase!")
         print(f"Your total cost is ${round(cost, 2)}")
         break
     else:
