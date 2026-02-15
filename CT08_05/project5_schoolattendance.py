@@ -19,11 +19,11 @@ def take_attendance(attendance):
     return attendance
 
 def attendance_percentage(student, attendance):
-    TrueNum = 0
+    trueNum = 0
     for i in attendance[student]:
         if i:
-            TrueNum += 1
-    return round(TrueNum / len(attendance[student]) * 100, 2)
+            trueNum += 1
+    return round(trueNum / len(attendance[student]) * 100, 2)
 
 def notify_low_attendance(attendance, threshold):
     low_attendance = []
