@@ -7,6 +7,13 @@ student_answers = {
     "bob": ["A", "B", "B", "D"]
 }
 
+#repeat asking user for command until they exit. grade students first so that scores can be used for remaining functions
+#grade: find number of correct answers for each student
+#avg: add all scores and divide by num of students
+#highest: set highest score, and loop though to see if there are any students with same or higher score.
+#display: loop through scores and print each name with their score
+#menu: print all options, ask user to choose a command. Do not allow user to type other things.
+
 def grade_all_students(ans, anskey):
     quiz_scores = {}
     for student in ans:
