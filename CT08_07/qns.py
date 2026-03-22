@@ -11,12 +11,6 @@
 nums = [2, 7, 11, 15]
 target = 9
 
-# def sumtarget(nums, target):
-#     for num1 in nums:
-#         for num2 in nums:
-#             if num1 + num2 == target and nums.index(num1) != nums.index(num2):
-#                 return [nums.index(num1), nums.index(num2)]
-
 numdict = {}
 
 def sumtarget(nums, target):
