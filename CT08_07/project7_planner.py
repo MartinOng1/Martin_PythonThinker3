@@ -62,6 +62,8 @@ Your choice: ''').strip().lower()
                 if int(done) >= len(lines) or int(done) < 1:
                     print("Please enter a valid task number")
                 else:
+                    # For consideration: would using a "" in (text) be possible here?
+                    # ^^^ yes, i just forgot about using that
                     if lines[int(done)][len(lines[int(done)])-7:] == "(Done)\n":
                         while True:
                             choice = input("That task is already marked as done. Would you like to\na. Mark undone\nb. Cancel\nYour Choice: ").strip().lower()
