@@ -1,4 +1,7 @@
 My Task List
-a
-b
-c
+a [MEDIUM]
+b [LOW]
+c [HIGH]
+hfhfha [HIGH]
+asdas [MEDIUM]
+asd

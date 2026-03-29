@@ -37,8 +37,23 @@ Your choice: ''').strip().lower()
         if len(lines) == 1:
             print("No tasks found!")
         else:
-            for line in range(len(lines)-1):
-                print(f"{line+1}. {lines[line+1]}")
+            high = []
+            medium = []
+            low = []
+            for line in lines:
+                if "[HIGH]" in line:
+                    high.append(line)
+                elif "[MEDIUM]" in line:
+                    medium.append(line)
+                else:
+                    if line != "My Task List\n":
+                        low.append(line)
+            for line in range(len(high)):
+                print(f"{line+1}. {high[line]}")
+            for line in range(len(medium)):
+                print(f"{line+len(high)+1}. {medium[line]}")
+            for line in range(len(low)):
+                print(f"{line+len(high)+len(medium)+1}. {low[line]}")
     elif action == "c":
         task = input("Enter a new task: ")
         f = open("CT08_07/tasks.txt", "r")

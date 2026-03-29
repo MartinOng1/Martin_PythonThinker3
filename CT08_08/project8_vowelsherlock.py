@@ -28,3 +28,23 @@ try:
         print("There was an error in creating the new file.")
 except FileNotFoundError:
     print("The file does not exist.")
+
+
+f = open("CT08_08/sherlock.txt", "r")
+words = f.read().lower().split()
+
+word = input("What word are you searching for?: ").lower().strip()
+newword = []
+for char in word:
+    if char.isalpha():
+        newword.append(char)
+word = "".join(newword)
+
+wordcount = 0
+while True:
+    if word in words:
+        wordcount += 1
+        words.remove(word)
+    else:
+        break
+print(f'The word "{word}" appears {wordcount} times.')
