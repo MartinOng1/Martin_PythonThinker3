@@ -1,0 +1,8 @@
+Lowest score: 43 (Ben)
+Highest score: 97 (Fiona)
+Number of scorers who scored between 0-50: 4
+Number of scorers who scored between 51-70: 10
+Number of scorers who scored between 71-90: 19
+Number of scorers who scored between 91-100: 7
+Mode for range: 19 (71-90)
+Average score: 74.85
