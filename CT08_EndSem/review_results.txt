@@ -1,0 +1,8 @@
+
+Review Text Analysis
+------------------------------
+Total Characters: 556
+Good Reviews: 11
+Bad Reviews: 9
+Percentage of Good Reviews: 55.0%
+Overall Rating: Mixed
